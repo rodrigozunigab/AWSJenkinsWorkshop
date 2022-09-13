@@ -1,13 +1,12 @@
 version: 0.2
 
 phases:
-  pre_build:
-    commands:
-      - pip3 install awscli --upgrade --user
   install:
     commands:
+        - apt-get update
+        - apt-get install -y curl
         - yum install python-pip
-        - python3 -m pip install Flask
+        - pip install Flask
   build:
     commands:
       - echo Build started on `date`
