@@ -3,11 +3,12 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - npm install
       - pip3 install awscli --upgrade --user
+  install:
+    commands:
+        - python3 -m pip3 install Flask
   build:
     commands:
-      - pip3 install requests
       - echo Build started on `date`
       - echo Compiling the Python code...
       - python3 test_app.py
