@@ -5,7 +5,7 @@ phases:
     commands:
         - python -m pip install Flask        
     finally:
-        - echo Preliminary tasks done
+        - echo Preliminary tasks done...
   build:
     commands:
       - echo Build started on `date`
