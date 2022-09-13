@@ -5,8 +5,10 @@ phases:
     commands:
         - apt-get update
         - apt-get install -y curl
-        - yum install python-pip
+        - apt install python3-pip
         - pip install Flask
+    finally:
+        - echo Preliminary tasks done
   build:
     commands:
       - echo Build started on `date`
