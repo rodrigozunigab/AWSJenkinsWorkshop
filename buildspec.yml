@@ -3,6 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
+        - pip3 install awscli --upgrade --user
         - python -m pip install Flask
   build:
     commands:
