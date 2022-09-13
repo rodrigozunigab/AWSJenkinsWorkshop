@@ -6,6 +6,7 @@ phases:
       - pip3 install awscli --upgrade --user
   install:
     commands:
+        - yum install python-pip
         - python3 -m pip install Flask
   build:
     commands:
